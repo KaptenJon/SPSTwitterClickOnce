@@ -1,0 +1,73 @@
+﻿<Page
+    x:Class="SPSTwitterStore.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:spsTwitterStore="using:SPSTwitterStore"
+    mc:Ignorable="d">
+    <Page.DataContext>
+        <spsTwitterStore:TweetBinding/>
+    </Page.DataContext>
+
+    <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+            <Grid.RowDefinitions>
+                <RowDefinition Height="99*"/>
+                <RowDefinition Height="428*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70*"/>
+                <ColumnDefinition Width="70*"/>
+            </Grid.ColumnDefinitions>
+            <Viewbox Grid.Column="0" Grid.Row="1">
+                <Grid>
+                    <ItemsControl  ItemsSource ="{Binding ResultlistFirstHalf}"  >
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Viewbox HorizontalAlignment="Left">
+                                    
+                                    <spsTwitterStore:ListViewDisplay HorizontalAlignment="Left" DataContext="{Binding }" Margin="10" />
+                                    
+                                </Viewbox>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Grid>
+            </Viewbox>
+            <Viewbox Grid.Column="1" Grid.Row="1">
+                <Grid>
+                    <ItemsControl ItemsSource ="{Binding ResultlistSecondHalf}"  >
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Viewbox HorizontalAlignment="Left">
+                                    <spsTwitterStore:ListViewDisplay DataContext="{Binding}" Margin="10" />
+                                </Viewbox>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Grid>
+            </Viewbox>
+
+            <Grid Background="White" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="537*"/>
+                    <ColumnDefinition Width="22*"/>
+                    <ColumnDefinition Width="191"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Assets/sps-2014.png" Margin="10,26,0,0" Grid.Column="0" HorizontalAlignment="Left" Width="537">
+                </Image>
+                <Grid HorizontalAlignment="Right" Margin="0,0,2,0" Grid.Column="2" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="16*"/>
+                        <RowDefinition Height="16*"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="Assets/prod1.jpg" Grid.Row="0" HorizontalAlignment="Right" Width="189"  />
+                    <Image Source="Assets/SPA_logo.jpg" Grid.Row="1" HorizontalAlignment="Right" Width="189" />
+                </Grid>
+                <TextBlock Grid.Column="0" Foreground="CornflowerBlue" FontStyle="Oblique" Text="#SPS2014" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Top" Width="547"/>
+            </Grid>
+
+        </Grid>
+
+</Page>
