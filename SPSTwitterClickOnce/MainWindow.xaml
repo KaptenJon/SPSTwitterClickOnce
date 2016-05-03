@@ -72,7 +72,7 @@
                 <Image Source="Assets/prod1.jpg" Grid.Row="0" HorizontalAlignment="Right" Width="189"  />
                 <Image Source="Assets/SPA_logo.jpg" Grid.Row="1" HorizontalAlignment="Right" Width="189" />
             </Grid>
-            <Label Content="#SPS2014 #SPS14" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Top" Width="547"/>
+            <Label Content="#cirpcats2016 #cirpcat2016" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Top" Width="547"/>
         </Grid>
 
     </Grid>

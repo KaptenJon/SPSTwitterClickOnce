@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://sps2014.dyndns.org/Service1.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://catscat.dyndns.org/Service1.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service13.xsd" MetadataType="Schema" ID="2c2b8bff-4b4d-490a-9d6d-8364d02311de" SourceId="1" SourceUrl="http://sps2014.dyndns.org/Service1.svc?xsd=xsd1" />
-    <MetadataFile FileName="Service11.disco" MetadataType="Disco" ID="1a21e975-a1b6-4fb3-83c7-34c038dac1ce" SourceId="1" SourceUrl="http://sps2014.dyndns.org/Service1.svc?disco" />
-    <MetadataFile FileName="Service11.wsdl" MetadataType="Wsdl" ID="31899584-bce8-49f6-ac99-75d1acd85158" SourceId="1" SourceUrl="http://sps2014.dyndns.org/Service1.svc?wsdl" />
-    <MetadataFile FileName="Service131.xsd" MetadataType="Schema" ID="90ceb2f2-f270-4884-83cd-1001d4f4c428" SourceId="1" SourceUrl="http://sps2014.dyndns.org/Service1.svc?xsd=xsd0" />
-    <MetadataFile FileName="Service132.xsd" MetadataType="Schema" ID="36891ad6-38c3-4a7f-9b39-23fcadabe622" SourceId="1" SourceUrl="http://sps2014.dyndns.org/Service1.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="25ff0df7-f570-4ad6-b393-2017380bcdf7" SourceId="1" SourceUrl="http://catscat.dyndns.org/Service1.svc?wsdl" />
+    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="f9645a14-044b-4fa4-9b19-cd56c7b4f7b2" SourceId="1" SourceUrl="http://catscat.dyndns.org/Service1.svc?disco" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="fe197ee6-4a90-4980-853d-f841416e9c6a" SourceId="1" SourceUrl="http://catscat.dyndns.org/Service1.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service11.xsd" MetadataType="Schema" ID="7c4a9d23-8447-4a46-bd19-c68ec5f7f967" SourceId="1" SourceUrl="http://catscat.dyndns.org/Service1.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service12.xsd" MetadataType="Schema" ID="51f92e5c-7997-4c4d-ab23-f692410629b5" SourceId="1" SourceUrl="http://catscat.dyndns.org/Service1.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

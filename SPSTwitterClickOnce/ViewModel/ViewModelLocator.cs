@@ -42,10 +42,10 @@ namespace SPSTwitterClickOnce.ViewModel
             ////    SimpleIoc.Default.Register<IDataService, DataService>();
             ////}
 
-            SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<TweetBinding>();
         }
 
-        public MainViewModel Main => ServiceLocator.Current.GetInstance<MainViewModel>();
+        public TweetBinding Main => ServiceLocator.Current.GetInstance<TweetBinding>();
 
         public static void Cleanup()
         {
