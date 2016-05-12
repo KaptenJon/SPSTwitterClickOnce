@@ -257,7 +257,10 @@ namespace TwitterConnector
         /// </summary>
         /// <value>The color of the profile background.</value>
         [DataMember]
-        public Color ProfileBackgroundColor => ConversionUtility.FromTwitterString(ProfileBackgroundColorString);
+        public Color ProfileBackgroundColor
+        {
+            get { return ConversionUtility.FromTwitterString(ProfileBackgroundColorString); }
+        }
 #endif
 
         /// <summary>
@@ -282,7 +285,10 @@ namespace TwitterConnector
         /// </summary>
         /// <value>The color of the profile link.</value>
         [DataMember]
-        public Color ProfileLinkColor => ConversionUtility.FromTwitterString(ProfileLinkColorString);
+        public Color ProfileLinkColor
+        {
+            get { return ConversionUtility.FromTwitterString(ProfileLinkColorString); }
+        }
 #endif
 
         /// <summary>
@@ -305,7 +311,10 @@ namespace TwitterConnector
         /// </summary>
         /// <value>The color of the profile text.</value>
         [DataMember]
-        public Color ProfileTextColor => ConversionUtility.FromTwitterString(ProfileTextColorString);
+        public Color ProfileTextColor
+        {
+            get { return ConversionUtility.FromTwitterString(ProfileTextColorString); }
+        }
 #endif
 
         /// <summary>
@@ -335,7 +344,10 @@ namespace TwitterConnector
         /// </summary>
         /// <value>The color of the profile sidebar border.</value>
         [DataMember]
-        public Color ProfileSidebarBorderColor => ConversionUtility.FromTwitterString(ProfileSidebarBorderColorString);
+        public Color ProfileSidebarBorderColor
+        {
+            get { return ConversionUtility.FromTwitterString(ProfileSidebarBorderColorString); }
+        }
 #endif
 
         #endregion

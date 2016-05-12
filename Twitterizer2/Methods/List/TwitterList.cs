@@ -143,7 +143,10 @@ namespace TwitterConnector
         /// </summary>
         /// <value><c>true</c> if this instance is public; otherwise, <c>false</c>.</value>
         [DataMember]
-        public bool IsPublic => Mode == "public";
+        public bool IsPublic
+        {
+            get { return Mode == "public"; }
+        }
 
         #endregion
 

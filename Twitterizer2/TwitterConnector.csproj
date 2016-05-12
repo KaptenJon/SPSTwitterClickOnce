@@ -358,7 +358,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\InstagramConnect\InstagramConnect.csproj">
-      <Project>{ac36ac91-32ca-449b-b46b-451e2951867e}</Project>
+      <Project>{AC36AC91-32CA-449B-B46B-451E2951867E}</Project>
       <Name>InstagramConnect</Name>
     </ProjectReference>
   </ItemGroup>

@@ -72,7 +72,10 @@ namespace TwitterConnector
         /// <value>
         ///     <c>true</c> if this instance has consumer token; otherwise, <c>false</c>.
         /// </value>
-        public bool HasConsumerToken => !string.IsNullOrEmpty(ConsumerKey) && !string.IsNullOrEmpty(ConsumerSecret);
+        public bool HasConsumerToken
+        {
+            get { return !string.IsNullOrEmpty(ConsumerKey) && !string.IsNullOrEmpty(ConsumerSecret); }
+        }
 
         /// <summary>
         ///     Gets a value indicating whether this instance has access token values.
@@ -80,7 +83,10 @@ namespace TwitterConnector
         /// <value>
         ///     <c>true</c> if this instance has access token; otherwise, <c>false</c>.
         /// </value>
-        public bool HasAccessToken => !string.IsNullOrEmpty(AccessToken) && !string.IsNullOrEmpty(AccessTokenSecret);
+        public bool HasAccessToken
+        {
+            get { return !string.IsNullOrEmpty(AccessToken) && !string.IsNullOrEmpty(AccessTokenSecret); }
+        }
 
         /// <summary>
         ///     Gets a value indicating whether this instance has values. This does not verify that the values are correct.
@@ -88,6 +94,9 @@ namespace TwitterConnector
         /// <value>
         ///     <c>true</c> if this instance has values; otherwise, <c>false</c>.
         /// </value>
-        public bool HasBothTokens => HasAccessToken && HasConsumerToken;
+        public bool HasBothTokens
+        {
+            get { return HasAccessToken && HasConsumerToken; }
+        }
     }
 }
