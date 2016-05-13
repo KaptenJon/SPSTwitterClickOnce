@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             mc:Ignorable="d"
+             mc:Ignorable="d" Background="Transparent"
              >
 
     <UserControl.Resources>
@@ -15,26 +15,41 @@
             <GradientStop Color="#888" Offset="1" />
         </LinearGradientBrush>
     </UserControl.Resources>
-    <Viewbox RenderOptions.BitmapScalingMode="Fant">
+    
         <Border
           HorizontalAlignment="Center" VerticalAlignment="Center"
-          BorderBrush="{StaticResource Flat3DBorderBrush}"
-          BorderThickness="5" CornerRadius="4" Background="#BBB">
-            <Grid Background="AliceBlue">
-                
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120" />
-                <ColumnDefinition Width="500" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-                
-                    <Image RenderOptions.BitmapScalingMode="Fant" Source="{Binding ContentImage}" MaxWidth="300" MaxHeight="300" Grid.Column="2" HorizontalAlignment="Right" Grid.Row="0" />
-            <Image RenderOptions.BitmapScalingMode="Fant" Source="{Binding Messenger}" Margin="10" Width="100" Grid.Column="0" Grid.Row="0"
-                   VerticalAlignment="Top" />
-            <TextBlock RenderOptions.BitmapScalingMode="Fant" TextWrapping="WrapWithOverflow" Text="{Binding Message}" Grid.Column="1" Grid.Row="0"
-                       HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" FontSize="25" />
+          BorderBrush="DarkGray"
+          BorderThickness="0,0,1,1" CornerRadius="4" >
+        <Border ClipToBounds="True" BorderBrush="LightBlue" BorderThickness="1,1,0,0" CornerRadius="4" Background="WhiteSmoke"  >
+                <Border ClipToBounds="True" BorderBrush="Black" BorderThickness="0,0,0,0" CornerRadius="1"  >
 
-        </Grid>
+                    <Grid Margin="5" UseLayoutRounding="True" ClipToBounds="True"  >
+                    <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="52" />
+                        <ColumnDefinition Width="500" />
+                        
+                    </Grid.ColumnDefinitions>
+
+                                   <Image Margin="2" RenderOptions.BitmapScalingMode="Fant" Source="{Binding Messenger}" HorizontalAlignment="Stretch"  Grid.Column="0" Grid.Row="0" VerticalAlignment="Stretch" />
+                    <Viewbox Margin="5,0" Grid.Column="1" RenderOptions.BitmapScalingMode="Fant">
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+                                
+                                <ColumnDefinition Width="500" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Margin="2" RenderOptions.BitmapScalingMode="Fant" Source="{Binding ContentImage}" MaxWidth="400" MaxHeight="300" Grid.Column="1" HorizontalAlignment="Right" Grid.Row="0" />
+
+                        <TextBlock  RenderOptions.BitmapScalingMode="Fant" TextWrapping="WrapWithOverflow"  Text="{Binding Message}" Grid.Column="0" Grid.Row="0"
+        				HorizontalAlignment="Left" Margin="2"  VerticalAlignment="Center" FontSize="25" />
+                    </Grid>
+                        </Viewbox>
+                </Grid>
+                </Grid>
+            </Border>
+            </Border>
         </Border>
-    </Viewbox>
+    
 </UserControl>

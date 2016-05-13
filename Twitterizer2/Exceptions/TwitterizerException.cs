@@ -144,10 +144,7 @@ namespace TwitterConnector
         ///     If a response is available from the Internet resource, a <see cref="T:System.Net.WebResponse" /> instance that
         ///     contains the error response from an Internet resource; otherwise, null.
         /// </returns>
-        public new WebResponse Response
-        {
-            get { return InnerException == null ? null : ((WebException) InnerException).Response; }
-        }
+        public new WebResponse Response => InnerException == null ? null : ((WebException) InnerException).Response;
 
         /// <summary>
         ///     Gets the bug report.

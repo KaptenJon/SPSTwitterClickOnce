@@ -82,15 +82,9 @@ namespace SPSTwitterClickOnce
         }
 
         private ObservableCollection<ListViewBindingObject> _resultlistFirstHalf = new ObservableCollection<ListViewBindingObject>();
-        public ObservableCollection<ListViewBindingObject> ResultlistFirstHalf
-        {
-            get { return _resultlistFirstHalf; }
-        }
+        public ObservableCollection<ListViewBindingObject> ResultlistFirstHalf => _resultlistFirstHalf;
         private ObservableCollection<ListViewBindingObject> _resultlistSecondHalf = new ObservableCollection<ListViewBindingObject>();
-        public ObservableCollection<ListViewBindingObject> ResultlistSecondHalf
-        {
-            get { return _resultlistSecondHalf; }
-        }
+        public ObservableCollection<ListViewBindingObject> ResultlistSecondHalf => _resultlistSecondHalf;
 
         public ObservableCollection<ListViewBindingObject> Resultlist
         {
